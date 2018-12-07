@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "3";
+const prefix = "1";
 /////////////////////////
 ////////////////////////
 
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '3help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**[3] برفكس البوت**')
@@ -342,8 +342,8 @@ client.on('message', message => {
     }
 });
 
-const developers = ["462437279487754240","442670807240671252",""]
-const adminprefix = "3";
+const developers = ["465999996400173066","442670807240671252","410032227490201620"]
+const adminprefix = "1";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
